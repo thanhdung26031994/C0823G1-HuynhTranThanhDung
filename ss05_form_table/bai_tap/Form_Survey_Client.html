@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khách Hàng</title>
+    <style>
+        .age{
+            height: 25px;
+            width: 300px;
+        }
+        .money{
+            width: 300px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Maket Reseach Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey</p>
+        <table>
+            <tr>
+                <td>
+                    <label for="age"><b>What is your age range?</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="age" id="age">
+                        <option value="18-24" selected>18-24</option>
+                        <option value="25-34" >25-34</option>
+                        <option value="35-50" >35-50</option>
+                        <option value="50+" >50+</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="money"><b>What is your yearly income range?</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="money" id="money">
+                        <option value="$0 - $25,000" style="width: 50%" selected>$0 - $25,000</option>
+                        <option value="$25,001 - $50,000" style="width: 50%" >$25,001 - $50,000</option>
+                        <option value="$50,001 - $100,000" style="width: 50%" >$50,001 - $100,000</option>
+                        <option value="$100,000++" style="width: 50%" >$100,000++</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Gender</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gender" value="male"/><label>Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gender" value="female"/><label>Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gender" value="nonbinary"/><label>Nonbinary</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gender" value="other"/><label>Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="gender"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Which of the following products have your purchased in the last 2 months.Please check all the apply</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="product1" value="on"/><label>Product 1</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="product2" value="on"/><label>Product 2</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="product3" value="on"/><label>Product 3</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>How often would you use our new product?</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="month" value="daily"/><label>Daily</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="month" value="weekly"/><label>Weekly</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="month" value="monthly"/><label>Monthly</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>What would you pay for the new product?</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>$</b></label>
+                    <input type="text"/>
+                    <label>.</label>
+                    <input type="number"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>&ensp;</label>
+                    <label>Dollars</label>
+                    <label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cents</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="like"><b>What features would you like to see in the new product?</b></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="like" name="product" rows="5" cols="100">
+                    </textarea>
+                </td>
+            </tr>
+        </table>
+        <p>Please rate your level of agreement with the following satements.</p>
+        <table border="1px solid #f5f4f4 " cellpadding="10" cellspacing="0">
+            <tr style=" background-color: #dddddd; text-align: center;">
+                <td></td>
+                <td>Trongly Disagree</td>
+                <td>Disagree</td>
+                <td>Agree</td>
+                <td>Trongly Agree</td>
+            </tr>
+            <tr style="text-align: center;">
+                <th style="text-align: left;" >Our products are priced fairly.</th>
+                <td>
+                    <input name="1" type="radio"><br>1
+                </td>
+                <td>
+                    <input name="2" type="radio"><br>2
+                </td>
+                <td>
+                    <input name="3" type="radio"><br>3
+                </td>
+                <td>
+                    <input name="4" type="radio"><br>4
+                </td>
+            </tr>
+            <tr style="background-color: #f5f4f4; text-align: center;">
+                <th style=" text-align: left;" >Our products are high quality.</th>
+                <td>
+                    <input name="1" type="radio"><br>1
+                </td>
+                <td>
+                    <input name="2" type="radio"><br>2
+                </td>
+                <td>
+                    <input name="3" type="radio"><br>3
+                </td>
+                <td>
+                    <input name="4" type="radio"><br>4
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <th style="text-align: left;">You would recommend our product to a friend or
+                    <br>coworker.</th>
+                <td>
+                    <input name="1" type="radio"><br>1
+                </td>
+                <td>
+                    <input name="2" type="radio"><br>2
+                </td>
+                <td>
+                    <input name="3" type="radio"><br>3
+                </td>
+                <td>
+                    <input name="4" type="radio"><br>4
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
